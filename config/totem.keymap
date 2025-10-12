@@ -220,7 +220,8 @@ label= "ADJ"                               ;
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
-        };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 lh_mod_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -238,13 +239,14 @@ label= "LH_MOD"                            ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &trans      &kp LGUI    &trans      &trans          &trans      &trans      &trans      &trans      &trans 
-                &trans      &kp LSHFT   &kp LALT    &kp LCTRL   &trans          &trans      &trans      &trans      &trans      &trans
+                &trans      &trans      &sk LGUI    &trans      &trans          &trans      &trans      &trans      &trans      &trans 
+                &trans      &sk LSHFT   &sk LALT    &sk LCTRL   &trans          &trans      &trans      &trans      &trans      &trans
     &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
-        };
+
+// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 rh_mod_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -262,8 +264,8 @@ label= "RH_MOD"                            ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &trans      &trans      &trans      &trans          &trans      &trans      &kp RGUI    &trans      &trans 
-                &trans      &trans      &trans      &trans      &trans          &trans      &kp RCTRL   &kp RALT    &kp RSHFT   &trans
+                &trans      &trans      &trans      &trans      &trans          &trans      &trans      &sk RGUI    &trans      &trans 
+                &trans      &trans      &trans      &trans      &trans          &trans      &sk RCTRL   &sk RALT    &sk RSHFT   &trans
     &trans      &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
