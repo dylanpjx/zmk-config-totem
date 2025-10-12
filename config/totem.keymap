@@ -65,85 +65,85 @@
         compatible = "zmk,combos";
         // --------------------------------
         combo_rwin {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <17 18>;
             bindings = <&sk RWIN>;
         };
         combo_rwin_ctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <16 17 18>;
             bindings = <&sk RG(RCTRL)>;
         };
         combo_rwin_shft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <17 18 19>;
             bindings = <&sk RG(RSHFT)>;
         };
         // --------------------------------
         combo_rctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <27 28>;
             bindings = <&sk RCTRL>;
         };
         combo_ralt {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <28 29>;
             bindings = <&sk RALT>;
         };
         combo_rshft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <29 30>;
             bindings = <&sk RSHFT>;
         };
         combo_ralt_ctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <27 28 29>;
             bindings = <&sk RA(RCTRL)>;
         };
         combo_ralt_shft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <28 29 30>;
             bindings = <&sk RA(RSHFT)>;
         };
         // --------------------------------
         combo_lwin {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <11 12>;
             bindings = <&sk LWIN>;
         };
         combo_lwin_ctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <11 12 13>;
             bindings = <&sk LG(LCTRL)>;
         };
         combo_lwin_shft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <10 11 12>;
             bindings = <&sk LG(LSHFT)>;
         };
         // --------------------------------
         combo_lctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <23 24>;
             bindings = <&sk LCTRL>;
         };
         combo_lalt {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <22 23>;
             bindings = <&sk LALT>;
         };
         combo_lshft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <21 22>;
             bindings = <&sk LSHFT>;
         };
         combo_lalt_ctrl {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <22 23 24>;
             bindings = <&sk LA(LCTRL)>;
         };
         combo_lalt_shft {
-            timeout-ms = <50>;
+            timeout-ms = <80>;
             key-positions = <21 22 23>;
             bindings = <&sk LA(LSHFT)>;
         };
