@@ -38,24 +38,14 @@
 
 / {
     behaviors {
-        mt: mod_tap {
+        mtt: mod_tap_thumbs {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <180>;
             bindings = <&kp>, <&kp>;
-        };
-        gresc: grave_escape {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        tldesc: tilde_escape {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp TILDE>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            retro-tap;
+            
         };
         mtl: mod_tap_left {
             compatible = "zmk,behavior-hold-tap";
@@ -103,8 +93,8 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G           &kp H       &kp J       &kp K       &kp L       &kp SEMI
- &mt LCTRL ESC  MTL(Z,          X,          C,          V)      &kp B           &kp N       MTR(M,          COMMA,      DOT,        FSLH)    &kp SQT
-                                  &lt ADJ K_PP &lt NUM TAB &lt NAV BSPC     &lt NAV SPACE   &lt NUM ENTER   &lt ADJ K_NEXT
+ &mtt LCTRL ESC MTL(Z,          X,          C,          V)      &kp B           &kp N       MTR(M,          COMMA,      DOT,        FSLH)    &kp SQT
+                                  &lt ADJ K_PP &lt NUM TAB &mtt LSHFT BSPC     &lt NAV SPACE   &lt NUM ENTER   &lt ADJ K_NEXT
                         >;
                 };
 
@@ -127,7 +117,7 @@ label= "NAVI"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &none       &none     &kp LC(RIGHT) &none       &none           &kp LC(INS) &kp PG_UP   &kp HOME    &none       &kp LS(INS)
+                &kp GRAVE   &none     &kp LC(RIGHT) &none       &none           &kp LC(INS) &kp PG_UP   &kp HOME    &none       &kp LS(INS)
                 &kp END  &kp LG(LS(S))  &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
     &kp CAPS    &kp K_PP    &kp K_PREV  &kp K_NEXT  &none       &kp LC(LEFT)    &none       &none       &none       &none       &none       &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
