@@ -118,7 +118,7 @@ label= "NAVI"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none     &kp LC(RIGHT) &none       &none           &kp LC(INS) &kp PG_UP   &kp HOME    &none       &kp LS(INS)
-                &kp END  &kp LG(LS(S))  &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
+                &kp END  &kp LA(LS(S))  &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
     &kp CAPS    &kp K_PP    &kp K_PREV  &kp K_NEXT  &none       &kp LC(LEFT)    &none       &none       &none       &none       &none       &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
@@ -170,7 +170,7 @@ label= "NAVI_MAC"                          ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &none   &kp LA(RIGHT)   &none       &none           &kp LC(INS) &kp PG_UP  &kp LG(LEFT) &none       &kp LS(INS)
-        &kp LG(RIGHT) &kp LG(LC(LS(4))) &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
+        &kp LG(RIGHT) &kp LG(LC(DOLLAR)) &kp PG_DN  &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
     &kp CAPS    &kp C_PP    &kp C_PREV  &kp C_NEXT  &none       &kp LA(LEFT)    &none       &none       &none       &none       &none       &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
