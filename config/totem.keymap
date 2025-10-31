@@ -119,7 +119,7 @@ label= "NAVI"                              ;
 
                 &none       &none     &kp LC(RIGHT) &none       &none           &kp LC(INS) &kp PG_UP   &kp HOME    &none       &kp LS(INS)
                 &kp END  &kp LA(LS(S))  &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-    &kp CAPS    &kp K_PP    &kp K_PREV  &kp K_NEXT  &none       &kp LC(LEFT)    &none       &none       &none       &none       &none       &none      
+    &kp CAPS    MTL(K_PP,   K_PREV,     K_NEXT,     GRAVE)      &kp LC(LEFT)    &none       &sk RCTRL   &sk RGUI    &sk RALT    &sk RSHFT   &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
@@ -171,7 +171,7 @@ label= "NAVI_MAC"                          ;
 
                 &none       &none   &kp LA(RIGHT)   &none       &none           &kp LC(INS) &kp PG_UP  &kp LG(LEFT) &none       &kp LS(INS)
         &kp LG(RIGHT) &kp LG(LC(DOLLAR)) &kp PG_DN  &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-    &kp CAPS    &kp C_PP    &kp C_PREV  &kp C_NEXT  &none       &kp LA(LEFT)    &none       &none       &none       &none       &none       &none      
+    &kp CAPS    MTL(C_PP,   C_PREV,     C_NEXT,     GRAVE)      &kp LA(LEFT)    &none       &sk RCTRL   &sk RGUI    &sk RALT    &sk RSHFT   &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
@@ -187,9 +187,9 @@ label= "NUM"                               ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     1     ┃     2     ┃     3     ┃     4     ┃     5     ┃   ┃     6     ┃     7     ┃     8     ┃     9     ┃     0     ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     $     ┃     !     ┃     _     ┃     *     ┃     %     ┃   ┃     ^     ┃     +     ┃     -     ┃     =     ┃     @     ┃
+//             ┃     !     ┃     #     ┃     _     ┃     *     ┃     %     ┃   ┃     ^     ┃     +     ┃     -     ┃     =     ┃     $     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃           ┃     #     ┃     {     ┃     [     ┃     (     ┃     &     ┃   ┃     |     ┃     )     ┃     ]     ┃     }     ┃     \     ┃           ┃
+// ┃           ┃     @     ┃     {     ┃     [     ┃     (     ┃     &     ┃   ┃     |     ┃     )     ┃     ]     ┃     }     ┃     \     ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -197,8 +197,8 @@ label= "NUM"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5          &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-                &kp DLLR    &kp EXCL    &kp UNDER   &kp ASTRK   &kp PRCNT       &kp CARET   &kp PLUS    &kp MINUS   &kp EQUAL   &kp AT
-    &none       MTL(HASH,       LBRC,       LBKT,       LPAR)   &kp AMPS        &kp PIPE    MTR(RPAR,       RBKT,       RBRC,       BSLH)    &none        
+                &kp EXCL    &kp HASH    &kp UNDER   &kp ASTRK   &kp PRCNT       &kp CARET   &kp PLUS    &kp MINUS   &kp EQUAL   &kp DLLR
+    &none       MTL(AT,         LBRC,       LBKT,       LPAR)   &kp AMPS        &kp PIPE    MTR(RPAR,       RBKT,       RBRC,       BSLH)    &none        
                                         &trans      &trans      &trans          &trans      &trans      &trans    
                         >;
                 };
@@ -211,20 +211,19 @@ label= "NUM"                               ;
 label= "ADJ"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃   RESET   ┃    BT2    ┃    BT1    ┃    BT0    ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
+//             ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    F7     ┃    F8     ┃    F9     ┃    F12    ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃ BOOTLOAD  ┃           ┃           ┃           ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
+//             ┃ BT CLR    ┃    BT2    ┃    BT1    ┃    BT0    ┃           ┃   ┃           ┃    F4     ┃    F5     ┃    F6     ┃    F11    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃ BT CLR    ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
+// ┃   MAC     ┃           ┃           ┃           ┃           ┃           ┃   ┃           ┃    F1     ┃    F2     ┃    F3     ┃    F10    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
-
-                &sys_reset &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &trans        &trans      &kp F7      &kp F8      &kp F9      &kp F12
-                &bootloader &trans      &trans      &tog 2      &trans          &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &bt BT_CLR  &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
+                &trans      &trans      &trans      &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
+                &bt BT_CLR  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &trans       &trans      &kp F4      &kp F5      &kp F6      &kp F11  
+    &tog 2      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
