@@ -128,7 +128,7 @@ label= "NAVI"                              ;
 
                 &none       &none     &kp LC(RIGHT) &none       &none           &kp LC(INS) &kp PG_UP   &kp HOME    &none       &kp LS(INS)
                 &kp END  &kp LA(LS(S))  &kp PG_DN   &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-    &kp CAPS    MTL(K_PP,   K_PREV,     K_NEXT,     GRAVE)      &kp LC(LEFT)    &none       &sk RCTRL   &sk RGUI    &sk RALT    &sk RSHFT   &none      
+    &kp CAPS    MTL(K_PP,   K_PREV,     K_NEXT,     GRAVE)      &kp LC(LEFT)    &none       &sk RCTRL   &sk RSHFT   &sk RALT    &sk RGUI   &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
@@ -180,7 +180,7 @@ label= "NAVI_MAC"                          ;
 
                 &none       &none   &kp LA(RIGHT)   &none       &none           &kp LC(INS) &kp PG_UP  &kp LG(LEFT) &none       &kp LS(INS)
         &kp LG(RIGHT) &kp LG(LC(DOLLAR)) &kp PG_DN  &none       &none           &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp DEL
-    &kp CAPS    MTL(C_PP,   C_PREV,     C_NEXT,     GRAVE)      &kp LA(LEFT)    &none       &sk RCTRL   &sk RGUI    &sk RALT    &sk RSHFT   &none      
+    &kp CAPS    MTL(C_PP,   C_PREV,     C_NEXT,     GRAVE)      &kp LA(LEFT)    &none       &sk RCTRL   &sk RSHFT   &sk RALT    &sk RGUI   &none      
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
@@ -232,7 +232,7 @@ label= "ADJ"                               ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
                 &trans      &trans      &trans      &trans      &trans          &trans      &kp F7      &kp F8      &kp F9      &kp F12
                 &bt BT_CLR  &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &trans       &trans      &kp F4      &kp F5      &kp F6      &kp F11  
-    &tog 2      &trans      &trans      &trans      &trans      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
+    &trans      &trans      &trans      &trans      &tog 2      &trans          &trans      &kp F1      &kp F2      &kp F3      &kp F10     &trans         
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
